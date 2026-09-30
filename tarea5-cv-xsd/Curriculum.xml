@@ -15,20 +15,20 @@ xsi:noNamespaceSchemaLocation="curriculum.xsd">
         <fechaNacimiento>1989-07-15</fechaNacimiento>
         <lugarNacimiento>Guadalajara</lugarNacimiento>
         <nacionalidad>Española</nacionalidad>
-        <numeroIdentificacion>03132392E</numeroIdentificacion>
+        <numeroIdentificacion>12345678E</numeroIdentificacion>
         <foto>foto.jpg</foto>
     </datosPersonales>
     
     <datosContacto>
         <tipoVia>Calle</tipoVia>
-        <nombreVia>Dóctor López Font</nombreVia>
-        <numero>10</numero>
+        <nombreVia>Nombre de calle</nombreVia>
+        <numero>1</numero>
         <piso>1</piso>
-        <puerta>B4</puerta>
+        <puerta>A4</puerta>
         <codigoPostal>18004</codigoPostal>
         <pais>España</pais>
         <email>gonzalo.hernandoll@gmail.com</email>
-        <telefonoMovil>625234134</telefonoMovil>
+        <telefonoMovil>111111111</telefonoMovil>
     </datosContacto>
 
     <datosContactoAdicionales>
