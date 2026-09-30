@@ -167,12 +167,12 @@ img.foto-perfil {
 }
 
 #trabajo {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: lighter;
   color: #1e4d6b;
 }
 
-#sobreMi {
+#perfilProfesional {
   background-color: #f0e68c;
   font-size: clamp(1rem, 1vw, 2rem);
   padding: 2rem 3rem 2rem 3rem;
@@ -208,7 +208,7 @@ img.foto-perfil {
 }
 
 .izquierda {
-  background-color: #1f2a30;
+  background-color: #0f4252;
   color: aliceblue;
 }
 
