@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Conexión DTD -->
+<!--<!DOCTYPE curriculum SYSTEM "curriculum.dtd">-->
+
+<!-- Conexión XSD -->
+<curriculum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="curriculum.xsd"> 
+    
+<!--<curriculum>--> <!-- Necesaria la etiqueta de apertura para el DTD -->
+    
+    <datosPersonales>   
+        <nombre>Gonzalo</nombre>
+        <apellidos>Hernando Llorente</apellidos>
+        <fechaNacimiento>1989-07-15</fechaNacimiento>
+        <lugarNacimiento>Guadalajara</lugarNacimiento>
+        <nacionalidad>Española</nacionalidad>
+        <numeroIdentificacion>03132392E</numeroIdentificacion>
+        <foto>foto.jpg</foto>
+    </datosPersonales>
+    
+    <datosContacto>
+        <tipoVia>Calle</tipoVia>
+        <nombreVia>Dóctor López Font</nombreVia>
+        <numero>10</numero>
+        <piso>1</piso>
+        <puerta>B4</puerta>
+        <codigoPostal>18004</codigoPostal>
+        <pais>España</pais>
+        <email>gonzalo.hernandoll@gmail.com</email>
+        <telefonoMovil>625234134</telefonoMovil>
+    </datosContacto>
+
+    <datosContactoAdicionales>
+        <linkedin>https://www.linkedin.com/in/ghernandollorente</linkedin>
+        <github>https://github.com/gon-hernando</github>
+    </datosContactoAdicionales>
+    
+    <formacion>
+
+        <estudio>
+            <nombre>Desarrollo de Aplicaciones Web</nombre>
+            <lugar>Instituto Zaidín Vergeles</lugar>
+            <fechaInicio>2025-09-01</fechaInicio>
+        </estudio>
+
+        <estudio>
+            <nombre>Programa de movilidad Erasmus</nombre>
+            <lugar>Università degli Studi di Perugia</lugar>
+            <fechaInicio>2010-09-01</fechaInicio>
+            <fechaFin>2011-07-01</fechaFin>
+        </estudio>
+
+        <estudio>
+            <nombre>Licenciatura de Farmacia</nombre>
+            <lugar>Universidad de Alcalá de Henares</lugar>
+
+            <fechaInicio>2008-09-01</fechaInicio>
+            <fechaFin>2012-06-01</fechaFin>
+        </estudio>
+        
+
+        
+    </formacion>
+    
+    <idiomas>
+
+        <idioma materno="si">
+            <nombre>Español</nombre>
+            <nivel>C2</nivel>
+        </idioma>
+
+        <idioma materno ="no">
+            <nombre>Inglés</nombre>
+            <nivel>B2</nivel>
+        </idioma>
+        
+        <idioma materno ="no">
+            <nombre>Italiano</nombre>
+            <nivel>B1</nivel>
+        </idioma>
+
+    </idiomas>
+    
+    <experienciaLaboral>
+        
+        <experiencia>
+            <empresa>Hospital Universitario Clinico San Carlos</empresa>
+            <puesto>Farmacéutico Hospitalario</puesto>
+            <fechaInicio>2024-05-01</fechaInicio>
+            <fechaFin>2024-10-01</fechaFin>
+        </experiencia>
+
+        <experiencia>
+            <empresa>Instituto de Investigación Sanitaria del Hospital Clínico San Carlos</empresa>
+            <puesto>Farmacéutico Hospitalario</puesto>
+            <fechaInicio>2021-07-25</fechaInicio>
+            <fechaFin>2024-04-30</fechaFin>
+        </experiencia>
+
+        <experiencia>
+            <empresa>Hospital Universitario Clinico San Carlos</empresa>
+            <puesto>Farmacéutico Residente</puesto>
+            <fechaInicio>2017-05-01</fechaInicio>
+            <fechaFin>2021-05-01</fechaFin>
+        </experiencia>
+        
+        <experiencia>
+            <empresa>Laboratorios Normon</empresa>
+            <puesto>Responsable de Producción, área de inyectables</puesto>
+            <fechaInicio>2014-11-15</fechaInicio>
+            <fechaFin>2016-03-14</fechaFin>
+        </experiencia>
+
+        <experiencia>
+            <empresa>Laboratorios Rovi</empresa>
+            <puesto>Técnico de Producción</puesto>
+            <fechaInicio>2012-09-19</fechaInicio>
+            <fechaFin>2014-10-30</fechaFin>
+        </experiencia>           
+        
+    </experienciaLaboral>
+
+    <competenciasSocioProfesionales>
+        <competencia>
+            <nombre>Liderazgo</nombre>
+            <nivel>3</nivel>
+        </competencia>
+        <competencia>
+            <nombre>Trabajo en equipo</nombre>
+            <nivel>3</nivel>
+        </competencia>
+        <competencia>
+            <nombre>Planificación y organización</nombre>
+            <nivel>5</nivel>
+        </competencia>
+        <competencia>
+            <nombre>Empatía</nombre>
+            <nivel>4</nivel>
+        </competencia>
+    </competenciasSocioProfesionales>
+
+    <datosAdicionales>
+        <aficiones>        
+            <aficion>Senderismo</aficion>
+            <aficion>Pintura</aficion>
+            <aficion>Juegos de mesa</aficion>
+        </aficiones>
+        <disponibilidadViajar>si</disponibilidadViajar>
+        <vehiculoPropio>si</vehiculoPropio>
+        <licenciasConducir>
+            <licenciaConducir>B</licenciaConducir>
+            <licenciaConducir>A2</licenciaConducir>
+        </licenciasConducir>
+    </datosAdicionales>
+    
+
+</curriculum>

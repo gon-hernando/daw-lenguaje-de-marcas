@@ -1,0 +1,166 @@
+* {
+    margin:0;
+    font-family: 'IBM Plex Serif'; /*tipografia google Nº1 */
+    box-sizing: border-box;
+}
+
+
+/*CABECERA */
+
+
+#cabecera {
+    background-color: #FDF6E3; /*color de fondo */
+    color: #4A6473; /*color de letra */
+    display:flex;
+    justify-content: center;
+    gap: 1rem; /*separación elementos hijos */
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+#logo{
+    width: 180px;
+}
+
+
+h1 {
+    font-size: 3rem; /*tamaño letra */
+    padding-right: 1rem;
+    padding-top: 1rem;
+    text-align:left;
+    font-family: 'Source Serif Pro'; /*tipografia google Nº2 */
+}
+
+h2 { 
+    font-size: 2.5rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    text-align: left;
+    font-family: 'Montserrat'; /*tipografia google Nº3 */
+
+}
+
+/*MENU */
+
+#menu {
+    display:flex;
+    gap: 20px;
+    padding:1rem;
+    background-color:khaki; /*color de fondo */
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold; /*negrita */
+    justify-content: center; /*jsutificar centrado */
+    font-variant: small-caps; /*versalitas*/
+    gap:5rem; /*separacion entre elementos del menu */
+    margin-bottom: 3rem; 
+}
+
+
+
+.link {
+    text-decoration: none; /*quitar el subrayado por defecto */
+    color:purple
+}
+
+.link:hover{
+    text-decoration:underline; /*subrayado al pasar cursor */
+    color: #4A6473;
+}
+
+#menu .link.activo {
+    pointer-events: none; 
+    text-decoration: none !important;  /*prioridad */
+}
+
+#menu .link.activo:hover{
+    text-decoration:none !important;
+    color: inherit;
+}
+
+/*CUERPO*/
+
+body{
+    background-color: whitesmoke
+}
+
+h3 {
+    font-size: 2rem;
+    font-variant: small-caps; /*versalita */
+    color: #4A6473;
+}
+
+#al-Khwarizmi {
+    height: 300px;
+    padding: 1.5rem;
+    display: block;
+    width: auto;
+}
+
+#introduccion {
+    background-color: antiquewhite;
+    display:flex;
+    font-style: italic; /*cursiva */
+    padding-right: 3rem;
+    padding-left: 2rem;
+    margin: 6rem;
+    align-items: center;
+    gap: 20px;
+    border: 2px solid #4A6473; /*definir borde al div */
+
+}
+
+#introduccion p { 
+    line-height: 2; /*interlineado */
+}
+
+
+.decada {
+    text-align: center;
+    padding: 1.5rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    
+}
+
+.destacado{
+    font-weight: bold; /*negrita */
+}
+
+.fila {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    padding: 10px;
+    align-items:flex-start
+}
+
+.año {
+    width: 10%;
+    font-size: 2rem;
+    font-weight: bold; /*negrita */
+}
+
+
+p {
+    text-align: justify;
+    line-height: 1.5; /*interlineado general para parrafos */
+    flex: 1; /* ocupar el resto del espacio */
+}
+
+
+.separador {
+    width: 80%;
+    margin:auto;
+}
+
+#pie_pagina {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:grey;
+    background-color: khaki;
+    margin-top: 4rem;
+    padding:1.5rem;
+}

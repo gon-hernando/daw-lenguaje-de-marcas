@@ -1,0 +1,171 @@
+html, body {
+    min-height: 100vh;
+    margin: 0;
+}
+
+/*=========*/
+/* CABECERA */
+/*=========*/
+
+
+
+#cabecera {
+    background-color:#008080;
+
+    color:white;
+    display:flex;
+    flex-direction: column;
+    height: 15vh;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+nav {
+    align-self: flex-end;
+}
+
+.boton__1 {
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 1rem;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 8px;
+    padding: 5px;
+    margin: 5px;
+}
+
+
+.boton__2 {
+    background-color: #ff9800;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 1rem;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 8px;
+    padding: 5px;
+    margin: 5px;
+}
+
+#boton__fondo {
+    background-color:#e9e9ed;
+    font-size: 1rem;
+    color: black;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 8px;
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+/*=========*/
+/* CUERPO */
+/*=========*/
+
+#cuerpo {
+    background-color: rgb(195, 193, 193);
+    font-family: 'Roboto', 'Open Sans', 'Helvetica', 'Arial', sans-serif;
+}
+
+#cuerpo.fondoAlternativo {
+    background-color: black;
+}
+
+.titulo-seccion{
+    color: #9b8f8c;
+    font-variant: small-caps;
+    padding: 1rem;
+    border-top: solid #008080;
+    border-bottom: solid #008080;
+}
+
+
+
+/*===========================*/
+/* POR QUE DEBERÍA ELEGIRNOS */
+/*===========================*/
+
+#contenedor-cuadros {
+    display: flex;
+}
+
+.cuadro {
+    font-size: 1rem;
+    width: 33%;
+    background-color: white;
+    margin: 2rem;
+    padding: 0.5rem;
+}
+
+/*=================*/
+/* ¿QUIENES SOMOS? */
+/*=================*/
+
+#quienes-somos {
+    min-height: 50vh;
+
+}
+
+#contenedor-personal {
+    display: flex;
+    gap:5rem;
+    margin-top: 2rem;
+}
+
+.columna{
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    margin:0.5rem;
+        gap: 40px;
+}
+
+
+.cuadro-personal {
+    display: flex;
+
+    height: 15vh;
+}
+
+.datos-personal {
+    background-color: #b8f0ed;
+    font-size: 1rem;
+    padding: 1rem;
+    width: 66%;
+}
+
+.negrita {
+    font-weight: bold;
+}
+
+.espaciador {
+    background-color: #e4f3eb;
+    width: 33%;
+}
+
+img {
+    height: 15vh;
+    width: auto;
+}
+
+
+
+/*========*/
+/* FOOTER */
+/*========*/
+
+footer {
+    background-color: #008080;
+    height: 50px;
+}
+
+.resaltado {
+    color: #ff9800;
+}

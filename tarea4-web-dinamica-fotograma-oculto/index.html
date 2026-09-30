@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Fotograma oculto</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <!-- Fuente H1  -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Limelight&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Autor -->
+    <meta name="author" content="Gonzalo Hernando" />
+
+    <!-- Palabras clave -->
+    <meta
+      name="keywords"
+      content="html, css, javascript, programación web, fotograma, película"
+    />
+
+    <!-- Descripción -->
+    <meta
+      name="description"
+      content="Fotograma oculto dividido que se gira mediante click de ratón"
+    />
+  </head>
+  <body>
+    <div id="cabecera">
+      <img src="img/icono_proyector.png" />
+      <h1>FOTOGRAMA DE PELÍCULA OCULTO</h1>
+    </div>
+
+    <!--CONTENEDOR CUADRÍCULA 3X3-->
+
+    <div id="contenedor">
+      <div id="contenedor-grid">
+        <div class="grid">
+          <!--FLIP-CARDS-->
+
+          <div class="contenedor-tarjeta">
+            <div class="tarjeta" data-pos="0">
+              <div class="frontal"></div>
+              <!--2 DIVS "superpuestos" mediante CSS-->
+              <div class="trasera"></div>
+            </div>
+          </div>
+
+          <div class="contenedor-tarjeta">
+            <div class="tarjeta" data-pos="1">
+              <div class="frontal"></div>
+              <div class="trasera"></div>
+            </div>
+          </div>
+
+          <div class="contenedor-tarjeta">
+            <div class="tarjeta" data-pos="2">
+              <div class="frontal"></div>
+              <div class="trasera"></div>
+            </div>
+          </div>
+
+          <div class="contenedor-tarjeta">
+            <div class="tarjeta" data-pos="3">
+              <div class="frontal"></div>
+              <div class="trasera"></div>
+            </div>
+          </div>
+
+          <div class="contenedor-tarjeta">
+            <div class="tarjeta" data-pos="4">
+              <div class="frontal"></div>
+              <div class="trasera"></div>
+            </div>
+          </div>
+
+          <div class="contenedor-tarjeta">
+            <div class="tarjeta" data-pos="5">
+              <div class="frontal"></div>
+              <div class="trasera"></div>
+            </div>
+          </div>
+
+          <div class="contenedor-tarjeta">
+            <div class="tarjeta" data-pos="6">
+              <div class="frontal"></div>
+              <div class="trasera"></div>
+            </div>
+          </div>
+
+          <div class="contenedor-tarjeta">
+            <div class="tarjeta" data-pos="7">
+              <div class="frontal"></div>
+              <div class="trasera"></div>
+            </div>
+          </div>
+
+          <div class="contenedor-tarjeta">
+            <div class="tarjeta" data-pos="8">
+              <div class="frontal"></div>
+              <div class="trasera"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="contendor-pelicula">
+        <h2 id="pelicula">The Shining <time datetime="1980"> (1980)</time></h2>
+      </div>
+    </div>
+
+    <!--PIE DE PÁGINA-->
+
+    <footer id="pie">
+      <p>Gonzalo Hernando Llorente</p>
+      <time datetime="2026">2026</time>
+    </footer>
+
+    <!--REFERENCIA A HOJA DE JS-->
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

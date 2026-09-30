@@ -1,0 +1,76 @@
+<!ELEMENT curriculum (datosPersonales, datosContacto, datosContactoAdicionales, formacion, idiomas, experienciaLaboral, competenciasSocioProfesionales , datosAdicionales )>
+
+
+<!-- DATOS PERSONALES -->
+
+<!ELEMENT datosPersonales (nombre, apellidos, fechaNacimiento, lugarNacimiento, nacionalidad, numeroIdentificacion, foto)>
+<!ELEMENT nombre (#PCDATA)> <!-- PCDATA indica que  el elemento contiene texto -->
+<!ELEMENT apellidos (#PCDATA)>
+<!ELEMENT fechaNacimiento (#PCDATA)>
+<!ELEMENT lugarNacimiento (#PCDATA)>
+<!ELEMENT nacionalidad (#PCDATA)>
+<!ELEMENT numeroIdentificacion (#PCDATA)>
+<!ELEMENT foto (#PCDATA)>
+
+<!-- DATOS DE CONTACTO -->
+
+<!ELEMENT datosContacto (tipoVia, nombreVia, numero?, portal?, escalera?,piso?, puerta?, codigoPostal, pais, email, telefonoMovil, telefonoFijo?)> <!-- ? indica opcionalidad del elemento -->
+<!ELEMENT tipoVia (#PCDATA)>
+<!ELEMENT nombreVia (#PCDATA)>
+<!ELEMENT numero (#PCDATA)>
+<!ELEMENT portal (#PCDATA)>
+<!ELEMENT escalera (#PCDATA)>
+<!ELEMENT piso (#PCDATA)>
+<!ELEMENT puerta (#PCDATA)>
+<!ELEMENT codigoPostal (#PCDATA)>
+<!ELEMENT pais (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT telefonoMovil (#PCDATA)>
+<!ELEMENT telefonoFijo (#PCDATA)>
+
+<!-- DATOS ADICIONALES DE CONTACTO -->
+
+<!ELEMENT datosContactoAdicionales (web?, linkedin?, github?, facebook?, instagram?, twitter?)>
+<!ELEMENT web (#PCDATA)>
+<!ELEMENT linkedin (#PCDATA)>
+<!ELEMENT github (#PCDATA)>
+<!ELEMENT facebook (#PCDATA)>
+<!ELEMENT instagram (#PCDATA)>
+<!ELEMENT twitter (#PCDATA)>
+
+<!-- FORMACIÓN -->
+
+<!ELEMENT formacion (estudio+)> <!-- +: el elemento aparece una o más veces -->
+<!ELEMENT estudio (nombre, lugar, fechaInicio, fechaFin?)>
+<!ELEMENT lugar (#PCDATA)>
+<!ELEMENT fechaInicio (#PCDATA)>
+<!ELEMENT fechaFin (#PCDATA)>
+
+<!-- IDIIOMAS -->
+
+<!ELEMENT idiomas (idioma+)>
+<!ELEMENT idioma (nombre, nivel)>
+<!ATTLIST idioma materno (si|no) #REQUIRED>
+<!ELEMENT nivel (#PCDATA)>
+
+<!-- EXPERIENCIA LABORAL -->
+
+<!ELEMENT experienciaLaboral (experiencia+)>
+<!ELEMENT experiencia (empresa, puesto?, fechaInicio, fechaFin?)>
+<!ELEMENT empresa (#PCDATA)>
+<!ELEMENT puesto (#PCDATA)>
+
+<!-- COMPETENCIAS -->
+
+<!ELEMENT competenciasSocioProfesionales (competencia+)>
+<!ELEMENT competencia (nombre, nivel)>
+
+<!-- OTROS DATOS -->
+
+<!ELEMENT datosAdicionales (aficiones, disponibilidadViajar, vehiculoPropio, licenciasConducir)>
+<!ELEMENT aficiones (aficion*)>
+<!ELEMENT aficion (#PCDATA)>
+<!ELEMENT disponibilidadViajar (#PCDATA)>
+<!ELEMENT vehiculoPropio (#PCDATA)>
+<!ELEMENT licenciasConducir (licenciaConducir*)>
+<!ELEMENT licenciaConducir (#PCDATA)>

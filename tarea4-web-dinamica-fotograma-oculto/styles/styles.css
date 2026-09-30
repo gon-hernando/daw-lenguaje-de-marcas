@@ -1,0 +1,138 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+/* TITULO */
+
+#cabecera {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:3rem;
+    width: 100%; 
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: #981f24;
+    font-family: 'Limelight', serif;
+    font-weight: bold;
+    font-size: 5rem;
+}
+
+/* TITULO */
+
+#contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1; /* ocupar todo el espacio disponible */
+    margin-bottom: 30px;;
+}
+
+#contenedor-grid {
+    background-color: black;
+    padding: 2rem;
+    border-color: black;
+    display:flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.grid {
+    display: grid; /* Dsiposicion grid para la cuadricula 3x3*/
+    grid-template-columns: repeat(3, 400px); /* Ajustar al tamaño de la imagen oculta */
+    grid-template-rows: repeat(3, 225px);
+    gap: 0px; /* Separacion de los fragmentos de imagten entre sí*/
+    justify-content: center;
+    width: 1200px;
+}
+
+/* FLIP-CARD */
+
+.tarjeta {
+    position: relative;
+    width: 400px; /* 1200px/3 */
+    height: 225px;
+    transform-style: preserve-3d;   /* elementos hijo conservan posicion 3D */
+    transition: transform 0.6s; /* tiempo de animación para la transformación */
+    cursor: pointer; /* cambio de cursor */
+}
+
+/* FRONTAL DE LA FLIP-CARD */
+
+.frontal { 
+    backface-visibility: hidden; /* Ocultar reverso*/
+    background-color: rgb(70, 69, 69);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform: rotateY(0deg);
+}
+
+/* REVERSO DE LA FLIP-CARD */
+
+.trasera {
+    backface-visibility: hidden; /* Ocultar reverso*/
+    background-image: url("../img/fotograma.jpg");
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform: rotateY(180deg); /* Rotada por defecto*/
+}
+
+/* CLASE AÑADIDA DESDDE JS */
+
+.girado { 
+    transform: rotateY(180deg); /* Cuando JS otorga la clase ".girado" la tarjeta gira 180º*/
+}
+
+/* Posicion de cada fragmento de la iamgen oculta en la cuadricula 3x3*/
+
+.tarjeta[data-pos="0"] .trasera { background-position: 0% 0%; }
+.tarjeta[data-pos="1"] .trasera { background-position: 50% 0%; }
+.tarjeta[data-pos="2"] .trasera { background-position: 100% 0%; }
+
+.tarjeta[data-pos="3"] .trasera { background-position: 0% 50%; }
+.tarjeta[data-pos="4"] .trasera { background-position: 50% 50%; }
+.tarjeta[data-pos="5"] .trasera { background-position: 100% 50%; }
+
+.tarjeta[data-pos="6"] .trasera { background-position: 0% 100%; }
+.tarjeta[data-pos="7"] .trasera { background-position: 50% 100%; }
+.tarjeta[data-pos="8"] .trasera { background-position: 100% 100%; }
+
+/* TÍTULO DE PELÍCULA */
+
+#contenedor-pelicula {
+    margin-bottom: 200px;
+}
+
+#pelicula {
+    font-size: 4rem;
+    font-style: italic;
+    opacity: 0; /*ocular titulo de pelicula*/
+    transition: opacity 0.5s; /*tiempod e transicion durante la trasnformacion*/
+}
+
+/* CLASE AÑADIDA DESDDE JS */
+
+#pelicula.activo {
+    opacity: 1; /*titulo de pelicula visible con evento disparador desde JS*/ 
+} 
+
+
+#pie {
+    font-size: 1rem;
+    color: grey;
+    text-align: center;
+    line-height: 0.8;  /* ajusta la separación entre líneas */
+
+}
