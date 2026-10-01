@@ -20,7 +20,7 @@ Cada práctica o proyecto se encuentra organizado en su correspondiente carpeta.
 
 ## 👨‍💻 Autor
 
-**Gon Hernando**  
+**Gonxalo Hernando**  
 Estudiante de **Desarrollo de Aplicaciones Web (DAW)**
 
 [![GitHub](https://img.shields.io/badge/GitHub-gon--hernando-181717?logo=github&logoColor=white)](https://github.com/gon-hernando)
